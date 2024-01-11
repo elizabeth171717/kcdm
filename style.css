@@ -141,11 +141,12 @@ Global Styles
   .section {
     padding: 5rem 0;
   }
- @media (max-width:500px) {
-  .section {
-    padding: 0;
+ 
+  @media (max-width:500px) {
+    .section {
+      padding: 0;
+    }
   }
- }
 
   /*******************************NAVIGAION BAR***********************************/
   
@@ -178,13 +179,16 @@ Global Styles
 
 
   #navbar-logo {
-   
+    color: var(--clr-white);
+    gap: .25rem;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+   font-weight: bold;
   }
+  
   
   .navbar-menu {
     display: flex;
@@ -198,7 +202,7 @@ Global Styles
   }
   
   .navbar-links {
-    color: #fff;
+    color: var(--clr-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,6 +239,13 @@ Global Styles
     font-weight: bold;
   }
   
+  .button a{
+    
+    color: #fff;
+  
+  }
+  
+
   .navbar-links:hover {
     color: #9518fc;
     transition: all 0.3s ease;
@@ -282,7 +293,7 @@ Global Styles
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background: #fff;
+      background:var(--clr-white);
     }
   
     .navbar-item {
@@ -342,18 +353,19 @@ Global Styles
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
     background-image: url(banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-  align-items: center;
-  justify-content: center;
+  
   }
   
   
  .home-container {
-  background-color: blanchedalmond;
-  opacity: 10;
+  color: var(--clr-yellow-light);
+  text-shadow: 3px 3px 4px #000000;
   padding: 1rem;
   margin: 1rem;
  }
@@ -470,7 +482,7 @@ About
   /*services section*/
   #services {
     background: #131313;
-    background-image: url(home.jpg);
+    background-image: url(wood.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -478,11 +490,21 @@ About
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-  
+    text-align: center;
   }
 
+  #services h2 {
+    margin-top: 1rem;
+  }
 
+  .services-container{
+    width: 80%;
+    margin: 3rem 0;
+    display: flex;
+    
+    justify-content: space-around;
+   
+  }
   
   .services-list {
     display: flex;
@@ -492,13 +514,37 @@ About
   }
   .service {
     font-weight: bold;
-    border: 2px solid var(--clr-white);
-    background-color: var(--clr-green-dark);
+ 
+  box-shadow: 2px 2px 4px #000000;
+    background-color: rgb(149, 212, 107);
     border-radius: 5px;
     padding: 1rem;
     display: flex;
     align-items: center;
     gap: .50rem;
+    font-size: 1.25rem;
+  }
+
+  @media (max-width:700px) {
+    .services-container{
+      width: 100%;
+    }
+  }
+
+  @media (max-width:500px) {
+    #services {
+      padding-top: 5rem;
+    }
+    .services-container{
+      width: 90%;
+      flex-direction: column;
+      gap: 1rem;
+     
+    }
+
+    .service {
+  justify-content: center;
+    }
   }
   /*main section*/
   #contact .image-con{
@@ -524,7 +570,7 @@ About
   @media (max-width:500px) {
     .facebook {
     width: 100%;
-    padding: 1rem 0;
+    padding: 3rem 0;
     }
 
     .facebook iframe {
