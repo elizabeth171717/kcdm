@@ -1,4 +1,5 @@
-/*
+
+  /*
 =============== 
 Imported Fonts
 ===============
@@ -72,6 +73,8 @@ Global Styles
   ul {
     list-style-type: none;
   }
+
+ 
   a {
     text-decoration: none;
   }
@@ -88,18 +91,18 @@ Global Styles
   h4 {
     letter-spacing: var(--spacing);
     text-transform: capitalize;
-    line-height:normal;
-    margin-bottom: 0.25rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
     font-family: var(--ff-primary);
   }
   h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.50rem;
+    font-size: 1.25rem;
   }
   h4 {
     font-size: 0.875rem;
@@ -122,7 +125,8 @@ Global Styles
       font-size: 1.75rem;
     }
     h4 {
-      font-size: 1rem;
+      font-size: 1.50rem;
+      font-weight: bolder;
     }
     body {
       font-size: 1rem;
@@ -189,6 +193,14 @@ Global Styles
    font-weight: bold;
   }
   
+  @media (max-width:500px) {
+    #navbar-logo {
+    
+      font-size: 1.50rem;
+      gap: .50rem;
+    }
+    
+  }
   
   .navbar-menu {
     display: flex;
@@ -220,30 +232,7 @@ Global Styles
     width: 100%;
   }
   
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    color: #fff;
-    transition: all 0.3s ease;
-    font-weight: bold;
-  }
-  
-  .button a{
-    
-    color: #fff;
-  
-  }
+ 
   
 
   .navbar-links:hover {
@@ -352,10 +341,8 @@ Global Styles
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
-    background-image: url(banner.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background-image: url(wood.jpg);
+  
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -364,10 +351,18 @@ Global Styles
   
   
  .home-container {
-  color: var(--clr-yellow-light);
-  text-shadow: 3px 3px 4px #000000;
+  position: relative;
+  top:-50px;
+  text-shadow: 2px 2px 3px rgb(100, 99, 99);
   padding: 1rem;
   margin: 1rem;
+  border: 1px solid red;
+ }
+ .orange{
+  color: var(--clr-green-dark);
+ }
+ .white {
+  color: var(--clr-white);
  }
   
   @media screen and (max-width: 768px) {
@@ -418,7 +413,7 @@ Global Styles
 }
 @media (max-width:500px) {
   .gallery-section{
-   padding: 3rem 0;
+   padding: 3rem 1rem;
   }
 
 
@@ -490,7 +485,7 @@ About
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+   text-align: center;
   }
 
   #services h2 {
@@ -534,6 +529,8 @@ About
   @media (max-width:500px) {
     #services {
       padding-top: 5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .services-container{
       width: 90%;
@@ -543,7 +540,12 @@ About
     }
 
     .service {
-  justify-content: center;
+ justify-content: center;
+  
+    padding: .50rem;
+   
+    gap: .50rem;
+    font-size: 2rem;
     }
   }
   /*main section*/
@@ -555,6 +557,10 @@ About
 
   #contact .text{
     font-weight: bolder;
+  }
+
+  #contact ul li{
+    font-size: 1.25rem;
   }
 
   /*FACEBOOK*/
