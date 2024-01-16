@@ -459,11 +459,21 @@ About
       width: 100%;
       }
 
-      .paragraph-con {
-       border-top: 5px solid var(--clr-blue-light)
-        }
+
   }
 
+@media (max-width:500px) {
+    .image-con {
+   
+  }
+
+ 
+  
+  .paragraph-con {
+  padding: 0 3rem;
+  background-color: grey;
+  }
+}
 
   /*services section*/
   #services {
