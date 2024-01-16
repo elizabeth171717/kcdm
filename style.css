@@ -357,9 +357,7 @@ Global Styles
  .orange{
   color: var(--clr-green-dark);
  }
- .white {
-  color: var(--clr-white);
- }
+}
   
   @media (max-width:500px) {
     .hero {
