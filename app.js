@@ -102,3 +102,13 @@ gsap.to(".gallery-section", {
     backgroundColor: " hsl(210, 22%, 49%)", 
     ease: "none"
   });
+
+ gsap.to(".service", {
+    scrollTrigger: {
+      trigger: ".service",
+      toggleActions: "restart pause reverse pause"
+    }, 
+    duration: 2, 
+    color: "#fff", 
+    ease: "none"
+  });
