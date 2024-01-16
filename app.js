@@ -109,6 +109,6 @@ gsap.to(".gallery-section", {
       toggleActions: "restart pause reverse pause"
     }, 
     duration: 2, 
-    color: "hsl(56, 100%, 51%)", 
+    color: "#fff", 
     ease: "none"
   });
