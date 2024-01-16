@@ -341,12 +341,8 @@ Global Styles
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
     padding: 200px 0;
-    background-image: url(wood.jpg);
-  
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
+    background-image: url(tile.jpg);
+ 
   }
   
   
@@ -390,6 +386,7 @@ Global Styles
 
 .gallery-section {
   text-align: center;
+   background-color: var(--clr-grey-1);
 }
 
 .image-box {
