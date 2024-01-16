@@ -514,7 +514,7 @@ About
     font-weight: bold;
  
   box-shadow: 2px 2px 4px #000000;
-    background-color: rgb(149, 212, 107);
+     background-color:var(--clr-primary-1);
     border-radius: 5px;
     padding: 1rem;
     display: flex;
