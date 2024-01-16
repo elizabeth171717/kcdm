@@ -87,7 +87,11 @@ ScrollTrigger.defaults({
     rotation: 360
   });
 
-
+ gsap.to(".animated-img", {
+    scrollTrigger: ".animated-img", 
+    duration: 1, 
+    rotation: 360
+  });
   
 gsap.to(".gallery-section", {
     scrollTrigger: {
