@@ -63,3 +63,38 @@ menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
 //NAVIGATION BAR ENDS
+
+
+//gsap animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause"
+  });
+  
+  gsap.to(".home-container", {
+    scrollTrigger: ".home-container", 
+    duration: 1, 
+    rotation: 360
+  });
+
+
+  gsap.to(".animated-text", {
+    scrollTrigger: ".animated-text", 
+    duration: 1, 
+    rotation: 360
+  });
+
+
+  
+gsap.to(".gallery-section", {
+    scrollTrigger: {
+      trigger: ".gallery-section",
+      toggleActions: "restart pause reverse pause"
+    }, 
+    duration: 2, 
+    backgroundColor: " hsl(210, 22%, 49%)", 
+    ease: "none"
+  });
