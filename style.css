@@ -452,7 +452,7 @@ About
   @media (max-width:900px) {
     .split {
       width: 100%;
-      flex-direction: flex-direction: column-reverse;
+    flex-direction: column-reverse;
      height: auto;
     }
     .container {
