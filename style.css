@@ -362,7 +362,7 @@ Global Styles
   @media (max-width:500px) {
     .hero {
      padding: 100px 0;
-     min-height:100vh;
+    
     }
 
     .home-container {
