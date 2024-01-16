@@ -376,7 +376,7 @@ Global Styles
 }
 
 .image-box {
-  width:400px;
+  width:500px;
   height:400px;
   box-shadow: 2px 2px 4px #000000;
   margin-top: 2rem;
@@ -452,7 +452,7 @@ About
   @media (max-width:900px) {
     .split {
       width: 100%;
-      flex-direction: column;
+      flex-direction: flex-direction: column-reverse;
      height: auto;
     }
     .container {
