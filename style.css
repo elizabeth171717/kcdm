@@ -340,40 +340,26 @@ Global Styles
   .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 200px 0;
+     min-height: 100vh;
     background-image: url(tile.jpg);
- 
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
   }
   
   
  .home-container {
-  position: relative;
-  top:-50px;
-  text-shadow: 2px 2px 3px rgb(100, 99, 99);
+  text-shadow: 2px 2px 3px var(--clr-green-dark);
   padding: 1rem;
   margin: 1rem;
-
  }
  .orange{
   color: var(--clr-green-dark);
  }
-}
+
   
-  @media (max-width:500px) {
-    .hero {
-        padding: 50px 0;
-    
-}
-    
-    }
-
-    .home-container {
-   
-      margin: 0;
-    
-     }
-  }
-
   /*GALLERY/*/
 
 .gallery {
