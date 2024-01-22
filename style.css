@@ -607,7 +607,19 @@ About
     }
   }
   
-  
+  /*map*/
+
+  @media (max-width:500px) {
+    .map iframe{
+    width: 100%;
+    padding: 3rem 0;
+    }
+
+    .map iframe {
+      width: 90%;
+   
+    }
+  }
   /*footer css*/
   
   .footer-container {
