@@ -7,6 +7,9 @@ Imported Fonts
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+
 /*
 =============== 
 Variables
@@ -334,31 +337,157 @@ Global Styles
   }
 
    /*******************************NAVIGAION BAR ENDS***********************************/
- 
-  
+   
   /*Hero section*/
   .hero {
-    background: #000000;
-    background: linear-gradient(to right, #161616, #000000);
+   
      min-height: 100vh;
-    background-image: url(tile.jpg);
+    background-color: #fff;
     padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
   
   }
   
   
  .home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ }
+
+ .home-img{
+width: 60%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+ }
+ .home-img .text {
+  position: relative;
+  bottom: -22px;
+  right:  0;
+  font-family: "Rowdies", sans-serif;
+ }
+
+ .home-img .text a, .fa-phone{
+ font-size: 3rem;
+ color: red;
+ font-weight: bold;
+ 
+   }
+ .home-img img{
+  width: 80%;
+   }
+
+ .home-intro{
+  width: 40%;
   
   padding: 1rem;
   margin: 1rem;
  }
  .orange{
-  color: var(--clr-green-dark);
+  color: red;
  }
 
+  
+@media (max-width:900px) {
+  .hero {
+   
+    min-height: auto;
+ 
+ }
+ 
+ 
+.home-container {
+ display: flex;
+ flex-direction: column;
+ 
+ 
+}
+
+.home-img{
+width: 100%;
+
+}
+
+.home-img img{
+ width: 100%;
+  }
+
+.home-intro{
+ width: 100%;
+ 
+
+}
+
+
+}
+
+@media (max-width:500px) {
+  .home-img .text a, .fa-phone{
+    font-size: 2rem;
+    
+    
+      }
+}
+
+  /*GALLERY/*/
+
+.gallery {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+
+.gallery-section {
+  text-align: center;
+  background-color: var(--clr-grey-1);
+}
+
+.image-box {
+  width:500px;
+  height:400px;
+  box-shadow: 2px 2px 4px #000000;
+  margin-top: 2rem;
+}
+
+.image-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width:800px) {
+  .gallery {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+
+  .image-box {
+    width:90%;
+    height:90%;
+   
+  }
+}
+@media (max-width:500px) {
+  .gallery-section{
+   padding: 3rem 1rem;
+  }
+  .home-img .text {
+  
+    bottom: -15px;
+    
+   }
+
+}
+
+  
   
   /*GALLERY/*/
 
