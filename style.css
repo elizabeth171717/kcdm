@@ -338,6 +338,7 @@ Global Styles
 
    /*******************************NAVIGAION BAR ENDS***********************************/
    
+  
   /*Hero section*/
   .hero {
    
@@ -429,8 +430,13 @@ width: 100%;
   .home-img .text a, .fa-phone{
     font-size: 2rem;
     
-    
-      }
+    }
+
+    .home-img .text {
+      
+      bottom: -18px;
+
+     }
 }
 
   /*GALLERY/*/
