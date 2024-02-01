@@ -171,8 +171,8 @@ Global Styles
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    border-top:5px solid var(--clr-yellow-light);
-   
+
+    border-bottom:5px solid var(--clr-grey-1);
     height: 80px;
     z-index: 1;
     width: 100%;
