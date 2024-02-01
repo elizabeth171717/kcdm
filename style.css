@@ -81,9 +81,7 @@ Global Styles
   a {
     text-decoration: none;
   }
-  img:not(.logo) {
-    width: 100%;
-  }
+
   img {
     display: block;
   }
@@ -158,7 +156,7 @@ Global Styles
   /*******************************NAVIGAION BAR***********************************/
   
   .navbar {
-    background-color: #131313;
+    background-color: var(--clr-white);
     height: 80px;
     display: flex;
    
@@ -186,20 +184,14 @@ Global Styles
 
 
   #navbar-logo {
-    color: var(--clr-white);
+    
     gap: .25rem;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-   font-weight: bold;
+
   }
   
   @media (max-width:500px) {
     #navbar-logo {
-    
-      font-size: 1.50rem;
+   
       gap: .50rem;
     }
     
@@ -217,7 +209,8 @@ Global Styles
   }
   
   .navbar-links {
-    color: var(--clr-white);
+ 
+     color: var(--clr-grey-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -575,7 +568,12 @@ About
   padding: 3rem;
   }
 
- 
+
+
+  .image-con img{
+   width: 100%;
+    }
+  
   
   .paragraph-con {
   padding: 3rem;
