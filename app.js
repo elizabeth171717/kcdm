@@ -1,3 +1,8 @@
+//gsap animation
+gsap.to(".image",{ scale:1, opacity:1, duration:2});
+
+
+
 //NAVIGATION BAR STARTS
 
 const menu = document.querySelector('#mobile-menu');
