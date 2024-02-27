@@ -748,21 +748,11 @@ background-color: var(--clr-white);
   }
 
 
-
   #contact .image-con iframe{
     width: 80%;
-   height: 80%;
+   height: 70vh;
 
   }
-
-@media(max-width:600px){
-  #contact .image-con iframe{
-    width: 90%;
-  
-
-  }
-}
-
 /************CONTACET SECTION ENDS************/
 
  /************MAP SECTION STARTS************/
