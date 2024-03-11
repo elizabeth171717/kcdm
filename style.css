@@ -43,6 +43,9 @@ img:not(logo) {
   max-width: 100%;
 }
 
+h4{
+  margin: .50rem 0;
+}
 a{
   text-decoration: none;
   color:  hsl(0, 86%, 53%);
