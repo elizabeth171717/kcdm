@@ -1,5 +1,5 @@
 //gsap animation
-gsap.from(".animated-img", { duration:1,scale:1.5});
+gsap.from(".animated-img", { duration:1,scale:0});
 
 //firt scrolltrigger
 let scrollTL = gsap.timeline({
