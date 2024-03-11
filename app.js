@@ -22,14 +22,15 @@ scrollTL2.from(".card", { scale: 0, stagger: {amount:0.5, from:"random"}, durati
 
 //third scrolltrigger
 
+
+
 let scrollTL3 = gsap.timeline({
   scrollTrigger: {
     trigger:".move-up",
     toggleActions:"play pause resume reverse"
   }
 });
-scrollTL3.from(".move-up", { opacity: 0, y:"6rem", duration:1});
-
+scrollTL3.from(".move-up", { scale: 0,opacity: 0, y:"6rem", duration:1});
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
