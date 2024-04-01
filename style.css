@@ -80,10 +80,12 @@ ul li{
   padding:2rem  1rem;
  
 }
-
+.heading h2{
+  color: hsl(0, 86%, 53%);
+}
  p {
 font-size: 1.25rem;
- 
+ margin-top: 1rem;
 }
 
 .paragrph{
