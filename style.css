@@ -188,7 +188,12 @@ nav {
 #hero {
   max-width: 100%;
  background: url('kkk.jpg');
-  background-position: center;
+background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+
   background-size: cover;
   min-height: 100vh;
   object-fit: cover;
