@@ -1,12 +1,11 @@
 //gsap animation
-let loopTL = gsap.timeline({repeat:-1, yoyo: true});
-loopTL.to(".jump", { y:"-1rem", duration:1, ease:"power1.inOut"})
+
 let loadTL = gsap.timeline();
-loadTL.from(".phone-num", { duration:1,scale:0,y:"-5rem"});
+loadTL.from(".banner-cont", { duration:1,scale:0,opacity:0);
 loadTL.from(".icon", { scale: 0,opacity: 0, y:"6rem", duration:.5,});
 
 
-loadTL.from("li", { scale: 0, opacity:0, stagger: {amount:0.5}, duration:.5}, .5);
+
 
 //firt scrolltrigger
 let scrollTL = gsap.timeline({
