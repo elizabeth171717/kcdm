@@ -1,7 +1,7 @@
 //gsap animation
 
 
-gsap.from(".banner", { duration:1,scale:0,opacity:0);
+gsap.from(".banner", { duration:3,scale:0,opacity:0);
 
 
 
