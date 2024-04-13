@@ -1,7 +1,8 @@
 //gsap animation
+let loadTL = gsap.timeline();
+loadTL.from(".banner-cont", { duration:1,scale:0,opacity:0);
+loadTL.from(".icon", { scale: 0,opacity: 0, y:"6rem", duration:.5,});
 
-
-gsap.from(".banner", { duration:3,scale:0,opacity:0);
 
 
 
