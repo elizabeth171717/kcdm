@@ -13,10 +13,26 @@ Imported Fonts
 }
 
 /*gsap*/
-.banner{
-opacity: 1;
-  scale:1;
 
+.icon{
+  scale: 1;
+  opacity: 1;
+}
+
+
+.animated-img{
+  opacity: 1;
+
+}
+
+
+.list{
+  scale: 1;
+  opacity: 1;
+}
+
+.g-container{
+scale:1;
 }
 
 
