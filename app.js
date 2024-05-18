@@ -1,24 +1,43 @@
 //gsap animation
-gsap.from(".hero-intro", { y:"-6rem", duratio:3})
+
 
 let scrollTL = gsap.timeline({
   scrollTrigger:{
     trigger: ".logo",
+    toggleActions:"play pause resume reverse",
   }
 });
 
 scrollTL.from(".logo", {opacity:0, scale:0, duration:1})
 
+
 let scrollTL2 = gsap.timeline({
   scrollTrigger:{
-    trigger: ".over-lay",
+    trigger: ".bullet",
+    toggleActions:"play pause resume reverse",
   }
 });
 
-scrollTL2.from(".over-lay", {opacity:0, scale:0, x:"5rem", duration:1})
+scrollTL2.from(".bullet", { scale:0, stagger:{each:0.5} ,duratio:1});
+
+let scrollTL3 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".list",
+    toggleActions:"play pause resume reverse",
+  }
+});
+
+scrollTL3.from(".list", { scale:0, stagger:{amount:0.5} ,duratio:1});
 
 
+let scrollTL4 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".gallery-img",
+    toggleActions:"play pause resume reverse",
+  }
+});
 
+scrollTL4.from(".gallery-img", { opacity:0,scale:0, stagger:{amount:0.5} ,duratio:1});
 
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
@@ -84,8 +103,3 @@ showSlide(slideIndex);
 slideIndex++;
 showSlide(slideIndex);
  }
-
-
-
-
-
