@@ -220,6 +220,7 @@ transform: rotate(-45deg) translate(-5px,6px);
       flex-direction: row;
      justify-content: space-between;
      padding: 1rem 2rem;
+     align-items: center;
      }
 
 
@@ -240,10 +241,6 @@ transform: rotate(-45deg) translate(-5px,6px);
       display: none;
     }
 
-    .call{
-     
-      font-size: 2rem;
-    }
   }
 
 /*********************NAVBAR*******************/
@@ -286,6 +283,7 @@ transform: rotate(-45deg) translate(-5px,6px);
 }
 
 .bullet{
+  scale:1;
   border: 3px solid var(--clr-red-dark);
   padding: .50rem .25rem;
   border-radius: 5px;
@@ -297,7 +295,7 @@ transform: rotate(-45deg) translate(-5px,6px);
    color: var(--clr-white);
 }
 
-@media (min-width:45em) {
+@media (min-width:60em) {
   .about{
   padding: 5rem 0;
   }
@@ -319,7 +317,7 @@ transform: rotate(-45deg) translate(-5px,6px);
 
   /*************SERVICES STARTS*************/
   .services{
-  background-image: url(wood.jpg);
+  background-image: url(../wood.jpg);
   color: var(--clr-white);
   padding: 5rem 2rem;
   display: flex;
@@ -347,14 +345,15 @@ text-align: center;
   }
 
     /*services-list*/
-.services-list {
-  margin: 0 auto;
-   width:70% ;
+.list {
+ scale: 1;
     
   }
 
 /*services-list*/
 .services-list {
+  margin: 0 auto;
+  width:70% ;
   display: grid;
  width:100% ;
   padding:3rem 1rem;
@@ -450,14 +449,15 @@ bottom: 50px;
   flex-direction: column;
   align-items: center;
   padding: 3rem ;
-  background-image: url(wood.jpg);
+  background-image: url(../wood.jpg);
  }
 
 
  .gallery-img{
  margin-bottom: 5rem;
  box-shadow: 3px 3px 3px rgb(22, 22, 22);
-
+opacity: 1;
+scale:1;
  }
 
  @media (min-width:45rem) {
