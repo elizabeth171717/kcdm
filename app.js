@@ -1,133 +1,91 @@
 //gsap animation
-let loadTL = gsap.timeline();
-loadTL.from(".banner-cont", { duration:1,scale:0,opacity:0);
-loadTL.from(".icon", { scale: 0,opacity: 0, y:"6rem", duration:.5,});
+gsap.from(".hero-intro", { y:"-6rem", duratio:3})
 
-
-
-
-
-
-//firt scrolltrigger
 let scrollTL = gsap.timeline({
-  scrollTrigger: {
-    trigger:".animated-img",
-    toggleActions:"play pause resume reverse"
+  scrollTrigger:{
+    trigger: ".logo",
   }
 });
-scrollTL.from(".animated-img", {opacity: 0, duration:1, scale: 0});
 
-//second scrolltrigger
+scrollTL.from(".logo", {opacity:0, scale:0, duration:1})
+
 let scrollTL2 = gsap.timeline({
-  scrollTrigger: {
-    trigger:".animated-img2",
-    toggleActions:"play pause resume reverse"
+  scrollTrigger:{
+    trigger: ".over-lay",
   }
 });
-scrollTL2.from(".animated-img2", {opacity: 0, duration:1, scale: 0});
 
-//third scrolltrigger
-let scrollTL3 = gsap.timeline({
-  scrollTrigger: {
-    trigger:".animated-img3",
-    toggleActions:"play pause resume reverse"
+scrollTL2.from(".over-lay", {opacity:0, scale:0, x:"5rem", duration:1})
+
+
+
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.scroll-link');
+
+const navSlide = () => {
+
+
+//TOGGLE NAV
+burger.addEventListener('click', () => {
+
+nav.classList.toggle('nav-active');
+//BUGER ANIMATION
+burger.classList.toggle('toggle');
+});
+nav.addEventListener("click", () => {
+    nav.classList.remove('nav-active');
+//BUGER ANIMATION
+burger.classList.remove('toggle');
+})
+
+}
+navSlide();
+
+
+const slides = document.querySelectorAll(".slider img");
+let slideIndex = 0;
+let intervalId = null;
+
+
+//initializesSlider
+
+document.addEventListener("DOMContentLoaded", initializeSlider);
+
+ function initializeSlider(){
+   if(slides.length > 0){
+    slides[slideIndex].classList.add("displaySlide");
+    intervalId= setInterval(nextSlide,2000)
+   }
+ }
+
+ function showSlide(index){
+
+  if(index >= slides.length){
+    slideIndex = 0;
+  } else if( index < 0){
+    slideIndex = slides.length - 1;
   }
-});
-scrollTL3.from(".animated-img3", {opacity: 0, duration:1, scale: 0});
-
-
-//stagger scrolltrigger
-let scrollTLs = gsap.timeline({
-  scrollTrigger: {
-    trigger:".list",
-    toggleActions:"play pause resume reverse"
-  }
-});
-scrollTLs.from(".list", { scale: 0.5,opacity: 0, y:"6rem", duration:1});
-
-
-//stagger scrolltrigger
-let scrollTLg = gsap.timeline({
-  scrollTrigger: {
-    trigger:".g-container",
-    toggleActions:"play pause resume reverse"
-  }
-});
-scrollTLg.from(".g-container", { scale: 0, stagger: {amount:0.5}, duration:1});
-
-
-//*************hide menu***************
-
-const hamburger = document.querySelector('#hamburger');
-const linksContainer = document.querySelector('.links-container')
-const navUl = document.querySelector('#nav-ul');
-
-
-hamburger.addEventListener('click', function () {
-    //linksContainer.classList.toggle('show');
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const linksHeight = navUl.getBoundingClientRect().height;
-
-    if(containerHeight === 0){
-        linksContainer.style.height = `${linksHeight}px`;
-    } else {
-        linksContainer.style.height = 0;
-    }
+   
+slides.forEach(slide => {
+    slide.classList.remove("displaySlide");
 });
 
+slides[slideIndex].classList.add("displaySlide");
+ }
 
-//fixed nav 
- const navbar = document.getElementById("nav");
- const topLink = document.querySelector(".top-link");
+ function prevSlide(){
+slideIndex --;
+showSlide(slideIndex);
+ }
 
- window.addEventListener("scroll", function () {
-    const scrollHeight = window.scrollY;
-    const navHeight = navbar.getBoundingClientRect().height;
-    if (scrollHeight > navHeight) {
-      navbar.classList.add("fixed-nav");
-    } else {
-      navbar.classList.remove("fixed-nav");
-    }
-    // setup back to top link
-  
-    if (scrollHeight > 500) {
-      console.log("helo");
-  
-      topLink.classList.add("show-link");
-    } else {
-      topLink.classList.remove("show-link");
-    }
-  });
+ function nextSlide(){
+slideIndex++;
+showSlide(slideIndex);
+ }
 
-  // ********** smooth scroll ************
-// select links
-const scrollLinks = document.querySelectorAll(".scroll-link");
-scrollLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    // prevent default
-    e.preventDefault();
-    // navigate to specific spot
-    const id = e.currentTarget.getAttribute("href").slice(1);
-    const element = document.getElementById(id);
 
-    const navHeight = navbar.getBoundingClientRect().height;
-    const containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navbar.classList.contains("fixed-nav");
-    let position = element.offsetTop - navHeight;
 
-    if (!fixedNav) {
-      position = position - navHeight;
-    }
-    if (navHeight > 82) {
-      position = position + containerHeight;
-    }
 
-    window.scrollTo({
-      left: 0,
-      top: position,
-    });
-    // close
-    linksContainer.style.height = 0;
-  });
-});
-// calculate heights
+
