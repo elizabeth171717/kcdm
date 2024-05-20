@@ -49,6 +49,25 @@ let scrollTL5 = gsap.timeline({
 scrollTL5.from(".icon", { opacity:0,scale:0, stagger:{amount:0.5} ,duratio:1});
 
 
+let scrollTL6 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".bottom",
+    toggleActions:"play pause resume reverse",
+  }
+});
+
+scrollTL6.from(".cta", { opacity:0.5,y:"6rem",duratio:1});
+
+
+let scrollTL7 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".services-cards",
+    toggleActions:"play pause resume reverse",
+  }
+});
+
+scrollTL7.from(".services-cards", { opacity:0.5,x:"6rem",duratio:1});
+
 //NAV
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
