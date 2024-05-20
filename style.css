@@ -63,6 +63,7 @@ Global Styles
 
   a{
     color: var(--clr-white);
+    text-decoration: none;
   }
 
   li {
@@ -116,7 +117,7 @@ Global Styles
     padding: 1rem;
     color: var(--clr-white);
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 3, 0.5);
   }
 
   /*********SLIDER*******/
@@ -255,6 +256,16 @@ transform: rotate(-45deg) translate(-5px,6px);
     text-align: center;
   }
 
+  .cta{
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: var(--clr-red-dark);
+    color: var(--clr-white);
+    width: 100%;
+    font-weight: bold;
+    opacity: 1;
+  }
+
 
   .logo{
     opacity: 1;
@@ -299,7 +310,12 @@ transform: rotate(-45deg) translate(-5px,6px);
 
   }
 
-  
+  .cta{
+    font-size: 1.50rem;
+    width: 60%;
+   
+  }
+
 
   .logo{
     width: 30%;
@@ -438,7 +454,7 @@ font-size: 1.5rem;
 bottom: 50px;
   padding: 1rem;
   background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 1, 1, 0.5);
     color: var(--clr-white);
     opacity: 1;
     scale: 1;
