@@ -39,6 +39,17 @@ let scrollTL4 = gsap.timeline({
 
 scrollTL4.from(".gallery-img", { opacity:0,scale:0, stagger:{amount:0.5} ,duratio:1});
 
+let scrollTL5 = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".icon",
+    toggleActions:"play pause resume reverse",
+  }
+});
+
+scrollTL5.from(".icon", { opacity:0,scale:0, stagger:{amount:0.5} ,duratio:1});
+
+
+//NAV
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.scroll-link');
