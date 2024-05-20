@@ -97,9 +97,7 @@ Global Styles
     h3{
       font-size: 1.75rem;
     }
-    p{
-      font-size: 1.25rem;
-    }
+   
       }
 /**********hero-intro*************/
 
@@ -295,20 +293,31 @@ transform: rotate(-45deg) translate(-5px,6px);
    color: var(--clr-white);
 }
 
-@media (min-width:60em) {
+@media (min-width:65em) {
   .about{
   padding: 5rem 0;
+
   }
 
-  .top{
-   width: 50%;
+  
+
+  .logo{
+    width: 30%;
+    
    margin: 0 auto;
   }
 
   .bottom{
-  
+
     flex-direction: row;
     gap: 3rem;
+    
+  }
+
+  .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -404,7 +413,7 @@ font-size: 1.5rem;
   border: 1px solid var(--clr-primary-1);
   padding: 1rem;
   background-color: var(--clr-primary-1);
-    opacity:1;
+  opacity:1;
   scale:1;
   }
 
