@@ -58,7 +58,7 @@ Global Styles
     scroll-behavior: smooth;
     color: var(--clr-primary-1);
     font-family: var(--ff-primary);
-    font-weight: bold;
+ 
   }
 
   a{
@@ -97,6 +97,9 @@ Global Styles
 
     h3{
       font-size: 1.75rem;
+    }
+    p {
+      font-size: 1.25rem;
     }
    
       }
@@ -511,7 +514,28 @@ margin: 0;
    object-fit: cover;
       }
      }
+
+ /************map**************/
+ .map{
+  padding: 5rem 0;
+
+}
+
+ @media (min-width:45rem) {
+  
+  .map-img{
+    width: 50%;
+  }
+  .map-img img{
+    width: 70%;
+  }
+
+  }
+
+
  /************FOOTER**************/
+
+
 
  footer{
   text-align: center;
