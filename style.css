@@ -520,7 +520,9 @@ margin: 0;
   padding: 5rem 0;
 
 }
-
+iframe{
+  width: 100%;
+}
  @media (min-width:45rem) {
   
   .map-img{
