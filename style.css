@@ -518,8 +518,11 @@ margin: 0;
  /************map**************/
  .map{
   padding: 5rem 0;
-
+ }
+.map-img{
+ padding: 1rem;
 }
+
 iframe{
   width: 100%;
 }
