@@ -356,10 +356,13 @@ width: 100%;
     }
 
     @media (min-width:60rem) {
-      
+      .about{
+ gap: 3rem;
+ }
+
       .bottom{
       flex-direction: row;
-        gap:0;
+   
         
       }
 
@@ -532,16 +535,15 @@ height: 400px;
 iframe{
   width: 100%;
 }
+
  @media (min-width:45rem) {
-  
-  .map-img{
-    width: 50%;
-  }
   .map-img img{
     width: 70%;
   }
-
+  
   }
+
+  
 
    /************MAP ENDS**************/
 
@@ -552,7 +554,7 @@ iframe{
 
  footer{
   text-align: center;
-  border-top: 3px solid var(--clr-primary-1);
+  background-color: var(--clr-primary-1);
   padding: 3rem 1rem;
   color: var(--clr-red-dark);
   font-weight: bold;
