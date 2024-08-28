@@ -393,9 +393,13 @@ width: 100%;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-  padding: 0 1rem;
+  
   }
 
+
+.services .header {
+margin:1rem;
+}
   .services-cards{
     width: 100%;
     
